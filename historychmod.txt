@@ -1,0 +1,14 @@
+   0 vi /tmp/file.txt
+   1 cat /tmp/file.txt 
+   2 df -h
+   3 df -h | head -2 >> /tmp/file.txt 
+   4 cat /tmp/file.txt 
+   5 cd /tmp/
+   6 ls -la
+   7 chmod g+w file.txt
+   8 ls -la
+   9 chmod u-r file.txt
+  10 ls -la
+  11 chmod o+x file.txt
+  12 ls -la
+  13 history > historychmod.txt
