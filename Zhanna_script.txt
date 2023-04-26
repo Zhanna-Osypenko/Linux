@@ -1,0 +1,8 @@
+#!/bin/bash
+
+touch zhanna.txt
+echo "Date is: $(date + '%D')" >> zhanna.txt
+cat /etc/group | tail -3 | sed 's/user/zhanna/' >> /root/zhanna.txt
+cp /root/zhanna.txt /tmp/
+
+echo "done"
