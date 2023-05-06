@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#data_part
+
+ for i in {1..5}
+ do
+ date +'%H:%M:%S'
+ ps -f  | grep -vw UID | wc -l
+ sleep 1
+ done
+
+cat /proc/cpuinfo | grep -w vendor_id >> /opt/280223_m/zhanna_osipenko/zhanna_060523.txt
+
+#name_part
+uname -a | awk '{print $1}' >> /opt/280223_m/zhanna_osipenko/zhanna_060523.txt
+
+#cycle_part
+for a in {1..5}
+do
+touch $a
+done
