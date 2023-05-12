@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in {1..5}
+do
+name=$i'_'$(date +"%H%M%S")
+touch /opt/280223_m/zhanna_osipenko/$name
+sleep 0.5
+done
+
